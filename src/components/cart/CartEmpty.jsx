@@ -1,15 +1,16 @@
-import { CartWrap } from "../../../../day18_project/src/pages/cart/ProjectStyle";
+
+import { CartEmptyListWrap } from "./cartStyle";
 
 
 const CartEmpty = () => {
     return (
-        <CartWrap className="cart-wrap">
+        <CartEmptyListWrap className="cart-wrap">
             
         <h2>장바구니가 비었습니다</h2>
 
 
 
-    </CartWrap>
+    </CartEmptyListWrap>
     );
 };
 

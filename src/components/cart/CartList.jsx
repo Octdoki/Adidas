@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useNavigation } from "react-router-dom";
-import { CartWrap } from "../../../../day18_project/src/pages/cart/ProjectStyle";
 import { AllChk, clearCart, clearSelectedCart, SingleChk, totalCart } from "../../store/modules/cartSlice";
 import CartItem from "./CartItem";
+import { CartListWrap } from "./cartStyle";
 
 const CartList = ({item}) => {  
     const {carts,cartTotal,checkItems }  =useSelector(state => state.cart)
@@ -82,7 +82,7 @@ const CartList = ({item}) => {
   }
 
     return (
-        <CartWrap className="cart-wrap">
+        <CartListWrap className="cart-wrap">
             
             <h2>장바구니</h2>
 
@@ -110,7 +110,7 @@ const CartList = ({item}) => {
             <button  onClick={()=>dispatch(clearCart())} >전체 삭제</button>
             <button  onClick={onclearSelected} >선택 삭제</button>
             {/* <button  onClick={()=>dispatch(())} >선택 삭제</button> */}
-        </CartWrap>
+        </CartListWrap>
     );
 };
 
