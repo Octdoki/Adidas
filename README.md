@@ -1,4 +1,4 @@
-![screencapture-localhost-5173-product-2023-12-19-16_54_05](https://github.com/Octdoki/AdidasMall/assets/76845650/ac972d36-9b56-4007-ac55-d34acfb40ad6) ## AdidasMall
+ ## AdidasMall
 
   아디다스 상품을 판매하는 쇼핑몰입니다
 
