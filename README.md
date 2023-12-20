@@ -3,7 +3,7 @@
   아디다스 상품을 판매하는 쇼핑몰입니다
 
    demo Link : https://octdoki.github.io/AdidasMall/dist/
-   -------
+   
 
    ## Description
 ![screencapture-localhost-5173-2023-12-19-02_03_07](https://github.com/Octdoki/AdidasMall/assets/76845650/2184a0ca-dbd9-4263-ad18-7c771d3eb2c3)
