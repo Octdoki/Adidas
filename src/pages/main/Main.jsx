@@ -9,7 +9,9 @@ import { Autoplay } from 'swiper/modules';
 const Main = () => {
     return (
         <>
+          <div className="inner">
             <VisualWrap>
+          
             <Swiper
                 modules={[Autoplay]}
                 spaceBetween={0}
@@ -19,16 +21,17 @@ const Main = () => {
                 autoplay={{ delay: 5000, disableOnInteraction: false }}
                 loop={true}
                 >
-                <SwiperSlide><img src="../../public/images/visual1.jpg" alt="visual1" /> </SwiperSlide>
-                <SwiperSlide><img src="../../public/images/visual2.jpeg" alt="visual2" /></SwiperSlide>
-                <SwiperSlide><img src="../../public/images/visual3.jpeg" alt="visual3" />swiper3</SwiperSlide>
-                <SwiperSlide><img src="../../public/images/visual4.jpeg" alt="visual4" />swiper4</SwiperSlide>
+                <SwiperSlide><img src="./images/visual1.jpg" alt="visual1" /> </SwiperSlide>
+                <SwiperSlide><img src="./images/visual2.jpeg" alt="visual2" /></SwiperSlide>
+                <SwiperSlide><img src="./images/visual3.jpeg" alt="visual3" /></SwiperSlide>
+                <SwiperSlide><img src="./images/visual4.jpeg" alt="visual4" /></SwiperSlide>
             </Swiper>
             </VisualWrap>
             <MainWrap >
                 <Content1 />
                 <Content2 />
             </MainWrap>
+            </div>
         </>
     );
 };

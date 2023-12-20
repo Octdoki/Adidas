@@ -61,7 +61,7 @@ const CartItem = ({item,  handleSingleCheck, handleAllCheck }) => {
               {title}
             </h3>
             <button onClick={additem} >+</button>
-            <span >{CntItem} </span>
+            <span >{onCntItem} </span>
             <button onClick={minusItem}>-</button>
             {/* <input type="number" id="" /> */}
             
