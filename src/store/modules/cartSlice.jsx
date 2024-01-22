@@ -81,10 +81,10 @@ export const cartSlice = createSlice({
          return{
            ...item,
           //  isChk : !item.isChk
-           isChk : true
+           isChk : !item.isChk
          }
        })
-       console.log('' , state.carts[0].isChk)
+       console.log('ㅔ묘 혀ㅑㅅㅁㄱ' , state.carts[0].isChk)
       
     }
 

@@ -13,10 +13,10 @@ const Cart = () => {
            <div className="inner">
                {
                    carts.length > 0 ?   
-                   <>    
+              
                    <CartList />
                     
-                   </>
+               
                  
                      : <CartEmpty />
                }

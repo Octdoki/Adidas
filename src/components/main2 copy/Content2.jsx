@@ -1,15 +1,16 @@
 import React from 'react';
 import { ContentStyle1 } from './ContentStyle';
-
-const Content1 = () => {
+const Content2 = () => {
     return (
-        <ContentStyle1>
+        <div>
+                   <ContentStyle1>
             <div className="inner">
                 <h2> 고객문의 </h2>
-                dsdfsdfbtrhrt
+                dsdfsdfbtrhrtbkbkbkbkbkb
             </div>
-        </ContentStyle1>     
+        </ContentStyle1>    
+        </div>
     );
 };
 
-export default Content1;
+export default Content2;
