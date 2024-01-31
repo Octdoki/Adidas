@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Con1Wrap  = styled.div`
-        height: 600px;
+width:100%; height: auto;
+        box-sizing: border-box; 
         .introWrap {
             display: flex;
             justify-content: space-between;
@@ -81,7 +82,7 @@ export const Con2Wrap =styled.section`
                     line-height: 50px;
                     letter-spacing: -1px;
                 }
-                p { font-size: 19px; line-height:35px; font-weight: 400; margin:50px 0px; word-break:keep-all; }
+                p { font-size: 19px; line-height:35px; font-weight: 400; margin:40px 0px; word-break:keep-all; }
                 .read { width:40%; display:block; font-family: 'Lato', sans-serif; font-weight:bold;    line-height:20px;
                     img { position:relative; left:20px; top:0; width: 20px; }
                 }
@@ -91,6 +92,7 @@ export const Con2Wrap =styled.section`
 
 `
 export const Con4Wrap =styled.div`
+    margin-bottom: 200px;
     ul{
         display: flex;
         li{
@@ -101,6 +103,11 @@ export const Con4Wrap =styled.div`
     object-fit: cover;
     width: 100%;
     height: 100%;
+            }
+            p{
+                margin-top: 48px;
+                h4{font-weight: 500; font-size: 24px;}
+                span{display: block; margin-top: 24px;}
             }
         }
     }

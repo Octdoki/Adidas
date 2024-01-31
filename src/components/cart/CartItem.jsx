@@ -12,7 +12,8 @@ const CartItem = ({item,  handleSingleCheck, handleAllCheck }) => {
  console.log('cartItem t/f : ' , isChk)
   const [calEachitem, setCalEachitem] = useState(price)
   const [onCntItem, setOnCntItem] = useState(CntItem)
-  const [copyChk, setCopyChk] = useState(isChk)
+  const [copyChk, setCopyChk] = useState(false)
+  // const [copyChk, setCopyChk] = useState(isChk)
 
   const additem =()=>{
 
@@ -30,9 +31,6 @@ const CartItem = ({item,  handleSingleCheck, handleAllCheck }) => {
     const {name, checked} = e.target
  
      //  dispatch(AllChk())
-
-
-  
       setCopyChk(!copyChk)
       if(!copyChk){
         console.log('머리뽀갈날거같아' ,copyChk)
@@ -53,20 +51,26 @@ const CartItem = ({item,  handleSingleCheck, handleAllCheck }) => {
 
     return (
         <article> 
+                   <input type="checkbox" onChange={onIncrease} checked={copyChk}  />               
           {/* <input type="checkbox" onChange={(e) => handleSingleCheck(e.target.checked, id)} checked={checkItems.includes(id) ? true : false} />          */}
-          <input type="checkbox" />         
+          {/* <input type="checkbox" />          */}
           <img src={image}  alt="" />
           <div>
             <h3>
               {title}
             </h3>
-            <button onClick={additem} >+</button>
+            <p className="Btn">
+              <button className="cntBtn" onClick={minusItem}>-</button>
+              <span>{onCntItem}</span>
+              <button className="cntBtn" onClick={additem}>+</button>
+            </p>
+            {/* <div onClick={additem} >+</div>
             <span >{onCntItem} </span>
-            <button onClick={minusItem}>-</button>
+            <div onClick={minusItem}>-</div> */}
             {/* <input type="number" id="" /> */}
             
-            <span> {price}  원</span>
-            <span> 수랑: {onCntItem } * 가격 {price} = {calEachitem}원</span>
+            <span> {calEachitem}  원</span>
+            {/* <span> 수랑: {onCntItem } * 가격 {price} = {calEachitem}원</span> */}
 
           </div>
           <button onClick={()=>dispatch(removeCart(id))}> 삭제 </button>        

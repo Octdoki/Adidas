@@ -13,7 +13,7 @@ const Con3 = () => {
                 <div className="introWrap">
                 <h3>Adidas Community </h3> 
                 <span className="read">
-                    <Link to="/about">
+                    <Link to="/notice">
                         READ MORE
                         <img src="./images/arrow.svg" alt="화살표 icon" />
                     </Link>

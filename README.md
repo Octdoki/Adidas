@@ -1,3 +1,4 @@
+  
  ## AdidasMall
 
   아디다스 상품을 판매하는 쇼핑몰입니다
@@ -80,24 +81,62 @@
   * react-router-dom
   * redux-toolkit
 
-  #### 주요기능
+  ## 주요기능
 
-  --------
 
-  1.  글쓰기, 수정, 삭제 (CRUD) 기능 
-![screencapture-localhost-5173-customer-2023-12-20-00_24_02](https://github.com/Octdoki/AdidasMall/assets/76845650/73bddbe7-4e72-4756-a33b-94855037dc65)
+  ### 1) 메인
 
-  2. 장바구니에 상품 담기
-![screencapture-localhost-5173-product-2023-12-19-16_54_05](https://github.com/Octdoki/AdidasMall/assets/76845650/3108ef7c-5f37-4336-bca8-443c5c3a72f6)
+* swiper slide 배너 
+* 페이지 리뉴얼
 
-  3. 장바구니 상품 체크 시 각 상품별 가격 및 총수량, 총 가격 기능
-
-  4. 장바구니 전체 상품 선택 시 총 개수 및 총 가격 나타내기(구현 예정)
-![screencapture-localhost-5173-cart-2023-12-20-01_49_40](https://github.com/Octdoki/AdidasMall/assets/76845650/1261340c-50aa-422a-9b43-35f90ec8c8c6)
-
-  5. 회원가입,로그인 기능
   
-![screencapture-localhost-5173-join-2023-12-20-01_58_27](https://github.com/Octdoki/AdidasMall/assets/76845650/8018a49f-8f16-489e-b216-7ae348614d76)
+<img src="./images/../public/images/main01.gif">
+
+### 2) About 
+
+* 컨텐츠 리뉴얼
+  
+<img src="./images/../public/images/main02.gif">
+
+
+### 3) 개발자인터뷰 페이지
+
+* 상품 정렬
+* 상품 정렬 초기화
+* 상품 리스트 검색 기능
+* 주문하기 클릭 시 장바구니 담기
+
+<img src="./images/../public/images/interview01.gif">
+
+
+### 4) 커리어페이지
+
+* 카테고리 분류
+* 필터 팝업창 - 최신, 마감, 추천순 / 취업노하우, 
+  고민상담소, 개발자로 취업하기, 이벤트 소식 총 2개 필터
+* 게시물 팝업 참가신청 / 참가 완료페이지 (마이페이지 연동)
+* 게시물 페이지네이션
+* 추후 보완 및 추가 예정
+<img src="./images/../public/images/career01.gif">
+
+
+### 5) 로그인 / 마이페이지
+
+* 이메일로 로그인 + 인증번호
+* 마이페이지 포트폴리오 등록 
+* 포트폴리오 등록 시 메인 최신포폴 영역에 추가예정
+* 내활동 좋아요, 팔로우 수 수정 및 확인
+* 추후 보완 및 추가 예정
+  
+<img src="./images/../public/images/로그인+마이페이지.gif">
+
+
+### 6) 회원가입 / 로컬스토리지
+
+* 회원가입
+* 체크박스 전체 / 선택
+* 로컬스토리지 저장
+* 추후 보완 및 추가 예정
 
   
   

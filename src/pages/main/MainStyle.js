@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const VisualWrap = styled.section`
-    width:100%; height:800px; position:relative ; overflow:hidden ;
+    width:100%; height: 760px; position:relative ; overflow:hidden ;
     img{
         width: 100%;
         height: 700px;
@@ -18,6 +18,6 @@ export const VisualWrap = styled.section`
 
 export const MainWrap = styled.div`
     &.main{}
-    .inner { padding:40px 0 }
+    .inner { padding:100px 0 }
     h2 { font-size:30px; font-weight:700 }
 `

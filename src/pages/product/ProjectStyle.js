@@ -27,8 +27,34 @@ margin-bottom:30px; position:relative;
     display: flex;
     justify-content: space-between;
     p {        
-        input[type=text] { width:350px; box-sizing:border-box; height:45px; padding:10px; border:1px solid #999; }
-        button { width:100px; height:45px; vertical-align:top; }
+        /* input[type=text] { width:350px; box-sizing:border-box; height:45px; padding:10px; border:1px solid #999; }
+        button { width:100px; height:45px; vertical-align:top; position:relative;} */
+        .search-wrap {
+        display: flex;
+        margin-right: 5px;
+        min-width: 280px;
+        max-width: 280px;
+        position: relative;
+        width: 100%;
+        height: 32px;
+
+        input {
+            background-color: rgb(247, 249, 249);
+            border: 1px solid #dcdcdc;
+            border-radius: 19px;
+            padding: 8px 12px 8px 40px;
+            width: 100%; 
+            outline-color: #000000;
+        }
+        .search-icon {
+            fill: rgb(68, 68, 68);
+            height: 18px;
+            left: 12px;
+            position: absolute;
+            top: 8px;
+            width: 18px;
+        }
+    }
         select { width:200px; height:45px; box-sizing:border-box; padding:10px;  border:1px solid #999; }
         span { margin-left:15px; cursor: pointer;}
     }

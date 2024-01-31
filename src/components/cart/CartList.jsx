@@ -83,33 +83,44 @@ const CartList = ({item}) => {
 
     return (
         <CartListWrap className="cart-wrap">
-            
-            <h2>장바구니</h2>
+          <div className="inner">        
+              <h2>장바구니</h2>
+                <div className="cart-list">
+                    <div className="cart-top">
+                      <div>
+                                  <input type='checkbox' name={`select-${cartdata.id}`}
+                      onChange={(e) => handleAllCheck(e.target.checked, cartdata.id)}
+                      // 체크된 아이템 배열에 해당 아이템이 있을 경우 선택 활성화, 아닐 시 해제
+                      checked={checkItems.includes(cartdata.id) ? true : false}/>
+                                  <label htmlFor="all">전체선택</label>
+                              </div>
+                        {/* <label  htmlFor="all">전체선택 </label> */}
+                        {/* <input type="checkbox" name="" id="checkedAll" onChange={handleAllCheck} checked={item.ischk}/> */}
+                        {/* <input type="checkbox" name='all'id='all'  onChange={handleAllCheck} checked={ cartdata.filter(item => item.isChk !== true ).length< 1} /> */}
+                        <ul>
+                            <li>상품정보</li>
+                            <li>수량</li>
+                            <li>합계</li>
+                        </ul>
+                    </div>
+                    {
+                        carts.map(item =>  <CartItem id={item.id} item={item} checkItems={checkItems} handleSingleCheck={handleSingleCheck} handleAllCheck={handleAllCheck}/>)
+                    }
 
-
-            <div className="cart-list">
-                <div className="cart-head">
-                    <label  htmlFor="all">전체선택 </label>
-                    {/* <input type="checkbox" name="" id="checkedAll" onChange={handleAllCheck} checked={item.ischk}/> */}
-                    <input type="checkbox" name='all'id='all'  onChange={handleAllCheck} checked={ cartdata.filter(item => item.isChk !== true ).length< 1} />
                 </div>
-                {
-                    carts.map(item =>  <CartItem id={item.id} item={item} checkItems={checkItems} handleSingleCheck={handleSingleCheck} handleAllCheck={handleAllCheck}/>)
-                }
-
-            </div>
-            <div className="cart-bottom">
-                <p><strong>구매하기 </strong>
-                   <span>  {checkItems &&  checkItems.length} 개</span> 
-                </p>                
-                <p><strong>총금액</strong>
-                   <span> total :  {cartTotal} 원</span> 
-                </p>
-            </div>
-            <button  onClick={()=>navigate(`product`)} >쇼핑하러가기</button>
-            <button  onClick={()=>dispatch(clearCart())} >전체 삭제</button>
-            <button  onClick={onclearSelected} >선택 삭제</button>
-            {/* <button  onClick={()=>dispatch(())} >선택 삭제</button> */}
+                <div className="cart-bottom">
+                    <p><strong>구매하기 </strong>
+                      <span>  {checkItems &&  checkItems.length} 개</span> 
+                    </p>                
+                    <p><strong>총금액</strong>
+                      <span> total :  {cartTotal} 원</span> 
+                    </p>
+                </div>
+                <button  onClick={()=>navigate(`product`)} >쇼핑하러가기</button>
+                <button  onClick={()=>dispatch(clearCart())} >전체 삭제</button>
+                <button  onClick={onclearSelected} >선택 삭제</button>
+                {/* <button  onClick={()=>dispatch(())} >선택 삭제</button> */}
+          </div>
         </CartListWrap>
     );
 };
