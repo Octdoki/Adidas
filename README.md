@@ -4,7 +4,7 @@
 
   아디다스 상품을 판매하는 쇼핑몰입니다
 
-   demo Link : https://octdoki.github.io/AdidasMall/dist/](https://octdoki.github.io/Adidas/dist/
+   demo Link : https://octdoki.github.io/Adidas/dist/
    
 
    ## Description
